@@ -3,6 +3,16 @@ GET localhost:8080/
 
 ### POST to /
 POST localhost:8080/
+content-type: application/json
 
-### GET to /api/whata
-POST localhost:8080/api/whata
+{
+  "tz": "America/New_York"
+}
+
+### POST to /
+POST localhost:8080/
+content-type: application/json
+
+{
+  "tz": "America/New_York"
+}

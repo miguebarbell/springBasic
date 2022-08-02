@@ -2,14 +2,10 @@ package com.homeworks.springbasic;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
-import java.time.LocalDateTime;
 import java.time.OffsetDateTime;
 import java.time.ZoneOffset;
-import java.util.TimeZone;
 
 @SpringBootApplication
 public class SpringBasicApplication {
@@ -24,8 +20,8 @@ public class SpringBasicApplication {
 			return OffsetDateTime.now(ZoneOffset.UTC).toString();
 		}
 		@PostMapping("/")
-		public String postLocalDate(TimeZone tz) {
-			return  LocalDateTime.now(tz.toZoneId()).toString();
+		public String postLocalDate(@RequestBody GetDateTime time) {
+			return time.getTzone();
 		}
 	}
 }
