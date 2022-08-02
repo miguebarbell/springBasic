@@ -1,0 +1,8 @@
+### GET to /
+GET localhost:8080/
+
+### POST to /
+POST localhost:8080/
+
+### GET to /api/whata
+POST localhost:8080/api/whata
