@@ -1,7 +1,7 @@
 ### GET to /
 GET localhost:8080/
 
-### POST to /
+### POST to / Eastern Time
 POST localhost:8080/
 content-type: application/json
 
@@ -9,10 +9,10 @@ content-type: application/json
   "tz": "America/New_York"
 }
 
-### POST to /
+### POST to / Pacific Standard Time
 POST localhost:8080/
 content-type: application/json
 
 {
-  "tz": "America/New_York"
+  "tz": "PST"
 }
