@@ -17,7 +17,10 @@ public class SpringBasicApplication {
 	public static class BasicController {
 		@GetMapping("/")
 		public String getUTC() {
-			return OffsetDateTime.now(ZoneOffset.UTC).toString();
+			String zulu;
+			zulu = OffsetDateTime.now(ZoneOffset.UTC).toString();
+//			System.out.println("zulu = " + zulu);
+			return zulu;
 		}
 		@PostMapping("/")
 		public String postLocalDate(@RequestBody GetDateTime time) {
