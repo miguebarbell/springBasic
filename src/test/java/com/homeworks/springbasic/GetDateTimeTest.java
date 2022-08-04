@@ -2,16 +2,18 @@ package com.homeworks.springbasic;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import java.time.*;
 import java.util.TimeZone;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-
+@SpringBootTest
 class GetDateTimeTest {
-	SpringBasicApplication.BasicController appTest = new SpringBasicApplication.BasicController();
-
+  @Autowired
+  SpringBasicApplication.BasicController appTest;
 	/**
 	 * check the UTC from the request and the computer be equal
 	 */
