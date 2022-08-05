@@ -16,3 +16,11 @@ content-type: application/json
 {
   "tz": "PST"
 }
+
+### POST to / Pacific Standard Time
+POST localhost:8080/
+content-type: application/json
+
+{
+  "tz": "DST"
+}

@@ -24,6 +24,7 @@ class GetDateTimeTest {
 		String zuluTimeTest = OffsetDateTime.now(ZoneOffset.UTC).toString();
 		// comparing strings
 		assertEquals(zuluTimeApp.split("\\.")[0], zuluTimeTest.split("\\.")[0]);
+
 		// comparing LocalDateTime
 		LocalDateTime ldtApp = LocalDateTime.parse(appTest.getUTC().replace("Z", ""));
 		LocalDateTime ldtTest = LocalDateTime.parse(zuluTimeTest.replace("Z", ""));
