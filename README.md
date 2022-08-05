@@ -31,3 +31,6 @@ and the response is a String
 
 ### Unit and Integration tests results.
 ![unit and integration tests](test.png)
+
+
+you can check the list of the [available timezones here.]("https://docs.oracle.com/middleware/12212/wcs/tag-ref/MISC/TimeZones.html")
